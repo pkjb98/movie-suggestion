@@ -14,11 +14,11 @@ import pickle
 
 # loading the dataset package
 
-movies = pickle.load(open('C:/Users/J.B.pradeep kumar/Documents/Machine Learing/Deployment/Movie Recommandations/movies.pkl','rb'))
+movies = pickle.load(open('movies.pkl','rb'))
 
 # loading the trained model
 
-loaded_model = pickle.load(open('C:/Users/J.B.pradeep kumar/Documents/Machine Learing/Deployment/Movie Recommandations/trained_pkl_movie_model.pkl','rb'))
+loaded_model = pickle.load(open('trained_pkl_movie_model.pkl','rb'))
 
 # list of all movie sin the package
 
@@ -63,7 +63,7 @@ def main():
     
     # getting the movie name from the user
     
-    option = st.selectbox('Hoe wuld you like to be contactes',list_of_movies)
+    option = st.selectbox('Movie Based Recommendation System',list_of_movies)
     
     # Creating a butto n for selection
     
